@@ -21,7 +21,8 @@ writer.append("\r\n");
 //写入到缓存区
 writer.append("English");
 //关闭写入流,同时会将缓存区内容写入到文件里
-writer.close();
+//writer.close();不关闭时也可以将字符流的内容全部输出，则可以使用Writer类中的flush()方法完成
+writer.flush();
 //关闭输出流，释放系统资源
 fop.close();
 
