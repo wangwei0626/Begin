@@ -1,4 +1,4 @@
-//OutputStreamWriter/InputStreamWriter,一个流被定义为一个数据序列。输入流用于从源读取数据，输出流用于向目标写数据。
+//字符流：OutputStreamWriter/InputStreamWriter；输出流用于向目标写数据/输入流用于从源读取数据，
 package test;
 
 import java.io.*;
