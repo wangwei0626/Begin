@@ -12,7 +12,7 @@ public class FileStreamDemo {
 File f = new File("a.txt");
 //构建FileOutputStream对象，文件不存在会自动创建
 FileOutputStream fop = new FileOutputStream(f);
-//构建OutputStreamWriter对象,参数可以指定编码
+//调用构造方法，创建OutputStreamWriter对象,参数可以指定编码
 OutputStreamWriter writer = new OutputStreamWriter(fop, "UTF-8");
 //写入到缓存区
 writer.append("中文输入");
