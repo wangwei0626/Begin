@@ -1,3 +1,4 @@
+//需要序列化的类必须实现 java.io.Serializable接口；类能不能被序列化，也需要看它能否支持次接口
 package SerializeDemo;
 
 public class Employee implements java.io.Serializable{
