@@ -16,10 +16,10 @@ public class Map {
 	for (String key : map.keySet()) {
 		System.out.println("一：key="+key+" and values="+map.get(key));
 	}
-    //第二种-使用构造器遍历,通过map.entrySet()遍历key和values；
+        //第二种-使用构造器遍历,通过map.entrySet()遍历key和values；
 	Iterator<Entry<String,String>> it =  map.entrySet().iterator();
 	while(it.hasNext()) {
-		Entry<String,String> entry=	it.next();
+		Entry<String,String> entry= it.next();
 		System.out.println("二：key="+entry.getKey()+" and values="+entry.getValue());
 	}
 	//第三种,容量大的时候推荐使用
