@@ -1,4 +1,4 @@
-//泛型的简单应用
+//泛型的简单应用，排除非法字符、指定存入集合的对象类型
 //ArrayList<String> list = new ArrayList<String>() 就相当于指定集合存储的是String类型，作用就是指定了可存入集合的对象类型
 package CollectionFrame;
 
