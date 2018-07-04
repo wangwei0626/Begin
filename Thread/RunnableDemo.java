@@ -4,7 +4,7 @@ package Thread;
 
 public class RunnableDemo implements Runnable {
     private String name;
-    
+    private int count = 50;
 	public RunnableDemo(String name) {
 		
 		this.name = name;
@@ -14,8 +14,8 @@ public class RunnableDemo implements Runnable {
 	public void run() {
 		// TODO Auto-generated method stub
 		for(int i = 1; i < 5; i++) {
-			
-			System.out.println(name + "运行" + i);
+		
+			System.out.println(name + "运行" + i + "\n" + this.count--);
 		}
 		
 	}
@@ -25,9 +25,8 @@ public class RunnableDemo implements Runnable {
 		//创建线程对象
 		RunnableDemo R1 = new RunnableDemo("A");
 		//继承接口的线程类需要通过创建Thread实例执行
-		Thread D1 = new Thread(R1);
-		RunnableDemo R2 = new RunnableDemo("B");
-		Thread D2 = new Thread(R2);
+		Thread D1 = new Thread(R1,"S");
+		Thread D2 = new Thread(R1,"x");
 		D2.start();
 		D1.start();
 	}
