@@ -17,11 +17,11 @@ public class Client {
 		System.out.println("远程主机地址为：" + client.getRemoteSocketAddress());
 		//获取客户端套接字的输出流
 		OutputStream outToServer = client.getOutputStream();
-		//创建数据输出流对象
+		//创建数据输出流对象,也是服务端的输入流
 		DataOutputStream out = new DataOutputStream(outToServer);
 		
 		out.writeUTF("hello from" + client.getLocalSocketAddress());
-		//创建客户端输入流
+		//创建客户端输入流，也是服务端的输出流
 		InputStream inFromServer = client.getInputStream();
 		//创建数据输入流
 		DataInputStream in = new DataInputStream(inFromServer);
