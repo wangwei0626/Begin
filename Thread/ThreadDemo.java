@@ -5,7 +5,7 @@ import java.util.Iterator;
 
 public class ThreadDemo extends Thread {
     private String name;
-    
+    private int count=50;
 	public ThreadDemo(String name) {
 		this.name = name;
 	}
@@ -17,7 +17,8 @@ public class ThreadDemo extends Thread {
 			} catch (Exception e) {
 				// TODO: handle exception
 			}
-			System.out.println(name + "运行" + i);
+			
+			System.out.println(name + "运行" + i + "\n" + this.count--);
 		}
 	}
 	public static void main(String[] args) {
