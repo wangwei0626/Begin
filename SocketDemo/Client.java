@@ -33,3 +33,7 @@ public class Client {
 	}
 
 }
+/**连接到主机localhost，端口为：6066
+远程主机地址为：localhost/127.0.0.1:6066
+服务端响应:谢谢连接我:/127.0.0.1:6066
+GoodBye*/
