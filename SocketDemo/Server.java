@@ -30,7 +30,7 @@ public class Server extends Thread {
 				//获取服务端的输入流，也是客户端的输出流
 				DataInputStream in = new DataInputStream(server.getInputStream());
 				System.out.println(in.readUTF());
-				//获取服务端的输出流
+				//获取服务端的输出流,也是客户端的输入流
 				DataOutputStream out = new DataOutputStream(server.getOutputStream());
 				out.writeUTF("谢谢连接我:" + server.getLocalSocketAddress() + "\nGoodBye" );
 				server.close();
@@ -57,3 +57,10 @@ public static void main(String[] args) {
 	}
 
 }
+/**执行结果：
+等待远程连接，端口号为6066.....
+java.net.SocketTimeoutException: Accept timed out
+等待远程连接，端口号为6066.....
+远程主机地址为/127.0.0.1:54926
+hello from/127.0.0.1:54926
+等待远程连接，端口号为6066.....*/
