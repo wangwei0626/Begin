@@ -27,7 +27,7 @@ public class Server extends Thread {
 				//调用accept方法，等待客户端连接
 				Socket server = serverSocket.accept();
 				System.out.println("远程主机地址为" + server.getRemoteSocketAddress() );
-				//获取服务端的输入流
+				//获取服务端的输入流，也是客户端的输出流
 				DataInputStream in = new DataInputStream(server.getInputStream());
 				System.out.println(in.readUTF());
 				//获取服务端的输出流
