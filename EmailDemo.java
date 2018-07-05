@@ -1,3 +1,4 @@
+//需要加载 mail.jar 和 activation.jar包 ，可以在oracle java官网直接下载；还需要QQ邮箱授权码登录
 package Email;
 
 import java.util.Properties;
@@ -33,7 +34,7 @@ public class EmailDemo {
 		
 		Session session = Session.getDefaultInstance(pro,new Authenticator() {
 			public PasswordAuthentication getPasswordAuthentication() {
-				return new PasswordAuthentication("541086759@qq.com", "tjfipnyqopgsbcgb");
+				return new PasswordAuthentication("541086759@qq.com", "***");
 			}
 		});
 		try {
