@@ -1,4 +1,4 @@
-
+//每一个分支都叫做一个线程，main()叫做主分支，也叫主线程
 package Thread;
 
 public class MainDemo implements Runnable {
