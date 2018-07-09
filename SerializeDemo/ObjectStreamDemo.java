@@ -29,6 +29,8 @@ ObjectOutputStream out = new ObjectOutputStream(fileout);
 //将对象序列化
 out.writeObject(e);
 //关闭输出流
+out.close();
+//关闭输出流
 fileout.close();
 } catch (Exception e2) {
 	// TODO: handle exception
