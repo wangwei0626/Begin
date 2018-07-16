@@ -1,4 +1,11 @@
-//字符流：OutputStreamWriter/InputStreamWriter；输出流用于向目标写数据/输入流用于从源读取数据，
+//转换处理流：OutputStreamWriter/InputStreamWriter：可将流从字节流转换为字符流，制定字符编码。
+/**
+ * 将字符数据写入文件，读取文件
+ * 1首先使用节点流对象读取文件
+ * 2使用处理流来转换将流从字节流转换为字符流，并制定字符编码
+ * 3
+ * */
+
 package test;
 
 import java.io.*;
