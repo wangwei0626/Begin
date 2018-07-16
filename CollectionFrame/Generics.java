@@ -5,6 +5,7 @@ package CollectionFrame;
 import java.util.ArrayList;
 
 public class Generics {
+	//创建一个静态方法，用来输出泛型数组的每个元素
     public static <E> void printArray(E[] inputArray) {
 		for (E e : inputArray) {
 			System.out.printf("%s ",e);
@@ -14,7 +15,8 @@ public class Generics {
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Integer[] intArray = { 1, 2, 3, 4, 5 };
+	//定义一系列的数组，调用泛型方法
+	Integer[] intArray = { 1, 2, 3, 4, 5 };
         Double[] doubleArray = { 1.1, 2.2, 3.3, 4.4 };
         Character[] charArray = { 'H', 'E', 'L', 'L', 'O' };
         System.out.println( "整型数组元素为:" );
