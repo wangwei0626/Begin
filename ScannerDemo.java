@@ -1,4 +1,4 @@
-//Scanner类获取用户输入
+//常用工具类Scanner类获取用户输入
 package test;
 import java.util.Scanner; 
 
